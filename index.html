@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>It web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-4  text-white" href="#">IT CLUB</a>
+        <!-- logo -->
+        <!-- btn -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+           <!-- btn -->
+              <!-- Sidebar -->
+        <div class="sidebar offcanvas text-dark offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- sidebar -->
+          <!-- sidebar header -->
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IT CLUB</h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- side bar Body -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2 ">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2 ">
+                <a class="nav-link active text-white" aria-current="page" href="#">Content</a>
+              </li>
+              <li class="nav-item mx-2 ">
+                <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2 ">
+                <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- side bar Body -->
+            <!-- Login/signup -->
+            <div class="d-flex flex-column justify-content-center align-items-center flex-lg-row gap-3">
+            <a href="#" class="text-white" onClick="login()">Login</a>
+            <a href="#" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: #f94ca4;">sign up</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <main class="navbar">
+      <section class="w-100 vh-100 d-flex flex-column justify-content-center text-white align-items-center fs-2">
+        <h1 style="font: 1.5em;">Welcome to IT CLUB</h1>
+        <h1 style="font: 1.5em;">Learn Codes</h1>
+        <button type="button" class="btn btn-outline-primary text-white">Click here</button>
+      </section>
+    </main>
+    <br>
+    <!-- Card -->
+    <!-- Heading card -->
+    <div class="cardhead">
+      <div class="garis"></div>
+      <h1 class="codes">
+        <strong>Codes</strong>
+      </h1>
+    </div>
+    <!-- Heading card -->
+    <div class="row row-cols-4 row-cols-sm-2 row-cols-md-4">
+      <div class="col col-md-6">
+    <div class="container">
+     <div class="card">
+      <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/0f1f62d3-2ba8-488a-8a2b-6d3765890d96/3798494645/notepad-plus-code-editor-for-html-css-javascript-screenshot.png" class="card-img" alt="">
+      <div class="card-body">
+        <h1 class="card-title text-white">HTML</h1>
+        <p class="card-sub-title text-white">Learn HTML</p>
+        <p class="card-info text-white">Learn HTML Together From Beginning To Advance, Ask Question And Answer About HTML, Grow Up Our Community, Make A Good And Loyal Community About HTML.</p>
+        <button class="card-btn text-white">Learn Now</button>
+      </div>
+     </div>
+    </div>
+  </div>
+    </main>
+
+    <div class="col col-md-6">
+    <div class="container">
+      <div class="card ">
+       <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/0f1f62d3-2ba8-488a-8a2b-6d3765890d96/3798494645/notepad-plus-code-editor-for-html-css-javascript-screenshot.png" class="card-img" alt="">
+       <div class="card-body">
+         <h1 class="card-title text-white">CSS</h1>
+         <p class="card-sub-title text-white">Learn CSS</p>
+         <p class="card-info text-white">Learn CSS Together From Beginning To Advance, Not Only Do Coding But We Learn About Abstraction Design For We Apply On Our CSS, We Learn Make UI And UX, Ask Question And Answer About CSS, Grow Up Our Community, Make A Good And Loyal Community About CSS</p>
+         <button class="card-btn text-white">Learn Now</button>
+       </div>
+      </div>
+     </div>
+     </main>
+    </div>
+
+    <div class="col col-md-6">
+      <div class="container">
+        <div class="card">
+         <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/0f1f62d3-2ba8-488a-8a2b-6d3765890d96/3798494645/notepad-plus-code-editor-for-html-css-javascript-screenshot.png" class="card-img" alt="">
+         <div class="card-body">
+           <h1 class="card-title text-white">JS</h1>
+           <p class="card-sub-title text-white">Learn JS</p>
+           <p class="card-info text-white">Learn JS Together From Beginning To Advanced, We Will Unders.<nding How to Make A Good Database And Make Web Pages Interactive, Learn About The High Level Language, Ask Question And Answer About JavaScripts, Grow Up Our Community, Make A Good And Loyal Community About Javascript/p>
+           <button class="card-btn text-white">Learn Now</button>
+         </div>
+        </div>
+       </div>
+       </main>
+      </div>
+  
+      <div class="col col-md-6">
+        <div class="container">
+          <div class="card">
+           <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/0f1f62d3-2ba8-488a-8a2b-6d3765890d96/3798494645/notepad-plus-code-editor-for-html-css-javascript-screenshot.png" class="card-img" alt="">
+           <div class="card-body">
+             <h1 class="card-title text-white">HTML</h1>
+             <p class="card-sub-title text-white">Learn HTML</p>
+             <p class="card-info text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dignissimos dolorum aperiam ullam aliquam. Natus vitae nihil incidunt laborum saepe, et libero mollitia illum similique provident omnis laboriosam quasi quibusdam.</p>
+             <button class="card-btn text-white">Learn Now</button>
+           </div>
+          </div>
+         </div>
+         </main>
+        </div>
+    </div>
+    <!-- card -->
+    <br>
+
+    <!-- footer -->
+    <footer class="footer-area">
+      <!-- Top Footer Area Start -->
+      <div class="foo_top_header_one section_padding_100_70">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <div class="IT-footer-part">
+                          <h5>About Us</h5>
+                          <p>......</p>
+                          <p>.....</p>
+                      </div>
+                      <div class="IT-footer-part m-top-15">
+                          <h5>Social Links</h5>
+                          <ul class="IT-social-links">
+                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Whatsapp</a></li>
+                              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Github</a></li>
+                              <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <div class="IT-footer-part">
+                          <h5>Tags Content</h5>
+                          <ul class="IT-widget">
+                              <li><a href="#">Learn</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#">Creative</a></li>
+                              <li><a href="#">One Page</a></li>
+                              <li><a href="#">Video</a></li>
+                              <li><a href="#">Souce</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="IT-footer-part m-top-15">
+                          <h5>Important Links</h5>
+                          <ul class="IT-links">
+                              <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
+                              <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About us</a></li>
+                              <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Project</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <div class="IT-footer-part">
+                          <h5>Best Project</h5>
+                          <div class="IT-blog-area">
+                              <div class="IT-thumb">
+              <img class="img-fluid" src="https://i0.wp.com/commonslibrary.org/wp-content/uploads/nick-karvounis-381259-unsplash-e1554118510458.jpg?fit=1000%2C667&ssl=1" alt="">
+                              </div>
+                              <a href="#">Your Blog Title Goes Here</a>
+                              <p class="IT-date">31 Jan 2023</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur</p>
+                          </div>
+                          <div class="IT-blog-area">
+                              <div class="IT-thumb">
+              <img class="img-fluid" src="https://i.insider.com/6019ac40ee136f00183a9de1?width=700" alt="">
+                              </div>
+                              <a href="#">Your Blog Title Goes Here</a>
+                              <p class="IT-date">26 Jan 2023</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur</p>
+                          </div>
+                          <div class="IT-blog-area">
+                              <div class="IT-thumb">
+              <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvHmy7HtAevinsa93cZn5uFMZaETJBkNKww&usqp=CAU" alt="">
+                              </div>
+                              <a href="#">Your Blog Title Goes Here</a>
+                              <p class="IT-date">21 Jul 2023</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <div class="IT-footer-part">
+                          <h5>Quick Contact</h5>
+                          <div class="IT-single-contact-info">
+                              <h5>Phone:</h5>
+                              <p>+62 ..........
+                          </div>
+                          <div class="IT-single-contact-info">
+                              <h5>Email:</h5>
+                              <p>IT@gmail.com
+                          </div>
+                      </div>
+                      <div class="IT-footer-part">
+                          <h5>Latest Works</h5>
+                          <div class="IT-works">
+                              <a class="IT-works-img" href="#"><img src="#" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer Bottom Area Start -->
+      <div class="IT-bottom-header-one section_padding_50 text-center">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <p>All Rights Reserved by <a href="#">IT CLUB<i class="fa fa-love"></i></a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  <script src="script.js"></script>
+</html>
